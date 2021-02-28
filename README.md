@@ -18,7 +18,7 @@ php vendor/bin/behat
 __You don't need to add categories separately, just add a new employee with a category name, it will be added (if needed) automatically__ 
 
 ![GitHub Logo](/sample.png)
-Format: ![Alt Text](url)
+
 
 
 
