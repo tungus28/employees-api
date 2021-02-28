@@ -1,7 +1,9 @@
-# Rest api for employees
+## Rest api for employees
 
-Run docker stack deploy -c stack.yml postgres (or docker-compose -f stack.yml up)
+# Docker env
+docker-compose -f stack.yml up
 
+# App install and data preload
 composer install
 
 php bin/console make:migration
@@ -10,7 +12,7 @@ php bin/console doctrine:migrations:migrate
 
 php bin/console doctrine:fixtures:load
 
-
+# App start and test
 php -q -S localhost:9200 -t public &
 
 php vendor/bin/behat
