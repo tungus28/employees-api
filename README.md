@@ -4,11 +4,11 @@ Run docker stack deploy -c stack.yml postgres (or docker-compose -f stack.yml up
 
 composer install
 
-symfony console make:migration
+php bin/console make:migration
 
-symfony console doctrine:migrations:migrate
+php bin/console doctrine:migrations:migrate
 
-symfony console doctrine:fixtures:load
+php bin/console doctrine:fixtures:load
 
 
 php -q -S localhost:9200 -t public &
