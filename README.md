@@ -1,4 +1,4 @@
-Rest API for Employees
+# Rest api for employees
 
 Run docker stack deploy -c stack.yml postgres (or docker-compose -f stack.yml up)
 
