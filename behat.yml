@@ -1,0 +1,10 @@
+default:
+  suites:
+    default:
+      contexts:
+        - App\Tests\Behat\CategoriesContext
+        - App\Tests\Behat\EmployeesContext
+        - App\Tests\Behat\NewEmployeeContext
+
+  extensions:
+    FriendsOfBehat\SymfonyExtension: null
