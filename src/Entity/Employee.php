@@ -71,7 +71,7 @@ class Employee
     private $firstName;
 
     /**   
-	 * @Assert\NotBlank
+     * @Assert\NotBlank
      * @ORM\Column(type="string", length=255)
      */
     private $lastName;
