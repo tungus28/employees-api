@@ -1,4 +1,4 @@
-<font size="+2">Rest API for Employees</font>
+###Rest API for Employees
 
 Run docker stack deploy -c stack.yml postgres (or docker-compose -f stack.yml up)
 
