@@ -19,7 +19,6 @@ php vendor/bin/behat
 
 __You don't need to add categories separately, just add a new employee with a category name, it will be added (if needed) automatically__ 
 
-## Also you can try the [App deployed on AWS using link](http://devrating.org/index.php/api/doc) 
 
 ![GitHub Logo](/sample.png)
 
