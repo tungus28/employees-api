@@ -1,7 +1,7 @@
 # Rest api for employees
 
 ## Docker env
-docker-compose up &
+docker-compose up -d
 
 ## App install and data preload
 composer install
