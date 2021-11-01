@@ -13,5 +13,5 @@ Feature: Create a new employee
       "parentEmail": "head.b@example.com"
     }
     """
-    When I request POST "http://localhost:9200/api/employees"
+    When I request POST "http://localhost:80/api/employees"
     Then the response status code should be 201

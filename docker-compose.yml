@@ -11,13 +11,15 @@ services:
       POSTGRES_PASSWORD: 12345
       POSTGRES_DB: postgres
     ports:
-      - 5432:5432
+      - 127.0.0.1:5432:5432
+    networks:
+      - code-network
 
-  #adminer:
-    #image: adminer
-    #restart: always
-    #ports:
-      #- 8081:8081
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8081
   web:
         image: nginx:latest
         ports:
@@ -29,7 +31,7 @@ services:
         networks:
             - code-network
   php-fpm:
-    image: php:fpm
+    build: docker/php-fpm
     volumes:
       - ./:/var/www/employees   
     networks:

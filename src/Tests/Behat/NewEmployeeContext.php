@@ -31,7 +31,7 @@ class NewEmployeeContext implements Context
     {
         $this->response = $this->client->request(
             'POST',
-            'http://localhost:9200/api/login_check',
+            'http://localhost:80/api/login_check',
             ['json' => [
                 'username' => 'admin@test.com',
                 'password' => '12345'

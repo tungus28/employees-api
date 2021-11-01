@@ -28,7 +28,7 @@ class CategoriesContext implements Context
     {
         $this->response = $this->client->request(
             'GET',
-            'http://localhost:9200/api/doc'
+            'http://localhost:80/api/doc'
         );
 
         $responseCode = $this->response->getStatusCode();
