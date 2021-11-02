@@ -3,15 +3,15 @@ version: '3.1'
 
 services:
 
-  db:
+  db_postgres:
     image: postgres
     restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 12345
       POSTGRES_DB: postgres
-    ports:
-      - 127.0.0.1:5432:5432
+    #ports:
+      #- 127.0.0.1:5432:5432
     networks:
       - code-network
 
